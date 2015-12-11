@@ -65,3 +65,9 @@ set nojoinspaces
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Wrap text with the command `gq' while maintaining the indentation.
 set autoindent
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display the row and column number.
+set ruler
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Display the line number on the left side.
+set number

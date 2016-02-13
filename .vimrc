@@ -48,6 +48,10 @@ set foldmethod=marker
 au BufNewFile,BufRead *.md setlocal ft=""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Set the folding for Python files
+au  BufNewFile,BufRead *.py setlocal foldmethod=indent
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Comply with the PEP 8 standard for maximum line length.
 set textwidth=79
 

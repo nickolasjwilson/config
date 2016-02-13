@@ -49,7 +49,7 @@ au BufNewFile,BufRead *.md setlocal ft=""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the folding for Python files
-au  BufNewFile,BufRead *.py setlocal foldmethod=indent
+au  BufNewFile,BufRead *.py setlocal foldmethod=indent foldnestmax=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Comply with the PEP 8 standard for maximum line length.

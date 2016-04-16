@@ -52,8 +52,12 @@ au BufNewFile,BufRead *.md setlocal ft=""
 au  BufNewFile,BufRead *.py setlocal foldmethod=indent foldnestmax=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Comply with the PEP 8 standard for maximum line length.
+" Set the maximum line length.
 set textwidth=79
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Remove the limit on the line length for select file types.
+autocmd FileType tex setlocal textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Replace tabs with only two spaces in html and shell script files.

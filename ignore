@@ -1,0 +1,30 @@
+###############################################################################
+# This file belongs in the directory "$HOME/.config/git/ignore".
+###############################################################################
+
+# Compiled
+*.o
+*.so
+
+# Compressed
+*.gz
+*.tar
+*.tgz
+*.zip
+
+# Latex
+*.aux
+*.bbl
+*.blg
+*.toc
+
+# Log
+*.log
+*.out
+
+# Python
+*.pyc
+__pycache__/
+
+# Vim
+*.swp

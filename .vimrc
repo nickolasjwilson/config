@@ -64,8 +64,8 @@ set textwidth=79
 autocmd FileType tex setlocal textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Replace tabs with only two spaces in html and shell script files.
-autocmd FileType bib,html,sh,css,tex setlocal tabstop=2 shiftwidth=2
+" Replace tabs with only two spaces in select types of files.
+autocmd FileType bib,css,hql,html,sh,sql,tex setlocal tabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable ftplugin

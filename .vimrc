@@ -48,6 +48,10 @@ set foldmethod=marker
 au BufNewFile,BufRead *.md setlocal ft=""
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Treat glossary files like TeX files.
+au BufNewFile,BufRead *.glo setlocal ft=tex
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the folding for Python files
 au  BufNewFile,BufRead *.py setlocal foldmethod=indent foldnestmax=2
 

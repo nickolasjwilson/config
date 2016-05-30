@@ -52,6 +52,10 @@ au BufNewFile,BufRead *.md setlocal ft=""
 au BufNewFile,BufRead *.glo setlocal ft=tex
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Treat JSON files like JavaScript files.
+autocmd BufNewFile,BufRead *.json set filetype=javascript
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the folding for Python files
 au  BufNewFile,BufRead *.py setlocal foldmethod=indent foldnestmax=2
 

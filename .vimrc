@@ -3,6 +3,10 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Enable ftplugin
+filetype plugin on
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tabstop=4 expandtab
 colorscheme desert
@@ -70,10 +74,6 @@ autocmd FileType tex setlocal textwidth=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Replace tabs with only two spaces in select types of files.
 autocmd FileType bib,css,hql,html,sh,sql,tex setlocal tabstop=2 shiftwidth=2
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Enable ftplugin
-filetype plugin on
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Prevent the commands `J` and `gq` from inserting an extra space after each
 " period.

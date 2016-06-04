@@ -5,7 +5,7 @@ set nocompatible
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable ftplugin
-filetype plugin on
+filetype plugin indent on
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set tabstop=4 expandtab
@@ -74,16 +74,20 @@ autocmd FileType tex setlocal textwidth=0
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Replace tabs with only two spaces in select types of files.
 autocmd FileType bib,css,hql,html,sh,sql,tex setlocal tabstop=2 shiftwidth=2
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Prevent the commands `J` and `gq` from inserting an extra space after each
 " period.
 set nojoinspaces
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Wrap text with the command `gq' while maintaining the indentation.
 set autoindent
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Display the row and column number.
 set ruler
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Display the line number on the left side.
 set number

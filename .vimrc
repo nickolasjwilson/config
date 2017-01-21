@@ -60,8 +60,11 @@ au BufNewFile,BufRead *.glo setlocal ft=tex
 autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Set the folding for Python files
-au  BufNewFile,BufRead *.py setlocal foldmethod=indent foldnestmax=2
+" Set up for a Python file.
+if !exists("python_settings_enabled")
+  let python_settings_enabled = 1
+  autocmd BufNewFile,BufRead,FileReadPost *.py source ~/.vim/python
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Set the maximum line length.

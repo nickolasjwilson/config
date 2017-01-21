@@ -63,7 +63,7 @@ autocmd BufNewFile,BufRead *.json set filetype=javascript
 " Set up for a Python file.
 if !exists("python_settings_enabled")
   let python_settings_enabled = 1
-  autocmd BufNewFile,BufRead,FileReadPost *.py source ~/.vim/python
+  autocmd BufNewFile,BufRead,FileReadPost *.py source ~/.vim/python.vim
 endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

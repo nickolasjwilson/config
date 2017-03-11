@@ -8,6 +8,7 @@ export EDITOR=/usr/bin/vim
 #-----------------------------------------------------------------------------#
 alias chrome='(chromium-browser --incognito &); exit'
 alias fire='(firefox --private &); exit'
+alias make='make --warn-undefined-variables'
 
 ###############################################################################
 # Shell options ###############################################################

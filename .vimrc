@@ -17,8 +17,8 @@ colorscheme desert
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
 if &t_Co > 2 || has("gui_running")
-    syntax on
-    set hlsearch
+  syntax on
+  set hlsearch
 endif
 
 " Add a highlight group to look out for trailing whitespace.
@@ -33,7 +33,6 @@ autocmd InsertLeave * 2match TrailingWhitespace /\s\+$/
 autocmd BufWinEnter * 2match TrailingWhitespace /\s\+$/
 " The following apparently avoids a memory leak.
 autocmd BufWinLeave * call clearmatches()
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Turn off text wrapping.
@@ -76,7 +75,8 @@ autocmd FileType tex setlocal textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Replace tabs with only two spaces in select types of files.
-autocmd FileType bib,css,hql,html,sh,sql,tex setlocal tabstop=2 shiftwidth=2
+autocmd FileType bib,css,hql,html,java,sh,sql,tex,vim
+    \ setlocal tabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Prevent the commands `J` and `gq` from inserting an extra space after each

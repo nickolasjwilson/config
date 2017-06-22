@@ -75,7 +75,7 @@ autocmd FileType tex setlocal textwidth=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Replace tabs with only two spaces in select types of files.
-autocmd FileType bib,css,hql,html,java,sh,sql,tex,vim
+autocmd FileType bib,css,hql,html,java,sh,sql,tex,vim,yaml
     \ setlocal tabstop=2 shiftwidth=2
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -25,6 +25,11 @@ function gpg-dir {
   local no_trailing_slash=${1%/}
   gpg-zip -c -o "${no_trailing_slash}.zip.gpg" "${no_trailing_slash}"
 }
+function preview-markdown {
+  local file_name=${1}
+  local stem=$(basename -s .md ${file_name})
+  pandoc -s -f markdown_github -t html -o ${stem}.html ${file_name}
+}
 function set-window-title {
   echo -ne "\e]0;${1}\a"
 }

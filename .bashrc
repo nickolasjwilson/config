@@ -21,6 +21,15 @@ set -o vi
 ###############################################################################
 # Functions ###################################################################
 #-----------------------------------------------------------------------------#
-function set_window_title {
+function gpg-dir {
+  local no_trailing_slash=${1%/}
+  gpg-zip -c -o "${no_trailing_slash}.zip.gpg" "${no_trailing_slash}"
+}
+function set-window-title {
   echo -ne "\e]0;${1}\a"
+}
+function write-hardware-info {
+  local FILE="${HOME}/tmp/hardware_info.html"
+  sudo lshw -html > ${FILE}
+  echo "Hardware information has been written to the file "'"'"${FILE}"'"'"."
 }

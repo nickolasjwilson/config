@@ -39,3 +39,8 @@ function write-hardware-info {
   sudo lshw -html > ${FILE}
   echo "Hardware information has been written to the file "'"'"${FILE}"'"'"."
 }
+function notify-me {
+  local message="${1:-Hello!}"
+  spd-say "$message"
+  zenity --info --text "$message" 2>/dev/null
+}

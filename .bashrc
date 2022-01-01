@@ -24,7 +24,7 @@ set -o vi
 #-----------------------------------------------------------------------------#
 function gpg-dir {
   local no_trailing_slash=${1%/}
-  gpg-zip -c -o "${no_trailing_slash}.zip.gpg" "${no_trailing_slash}"
+  gpgtar -c -o "${no_trailing_slash}.zip.gpg" "${no_trailing_slash}"
 }
 function preview-markdown {
   local file_name=${1}

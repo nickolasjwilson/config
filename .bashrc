@@ -2,6 +2,7 @@
 # Environment constants #######################################################
 #-----------------------------------------------------------------------------#
 export EDITOR=/usr/bin/vim
+readonly ORIGINAL_PROMPT=$PS1
 
 ###############################################################################
 # Aliases #####################################################################
@@ -32,7 +33,8 @@ function preview-markdown {
   pandoc -s -f markdown_github -t html -o ${stem}.html ${file_name}
 }
 function set-window-title {
-  echo -ne "\e]0;${1}\a"
+  local new_title="\[\e]2;$*\a\]"
+  PS1=${ORIGINAL_PROMPT}${new_title}
 }
 function write-hardware-info {
   local FILE="${HOME}/tmp/hardware_info.html"

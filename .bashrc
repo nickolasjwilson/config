@@ -7,7 +7,7 @@ readonly ORIGINAL_PROMPT=$PS1
 ###############################################################################
 # Aliases #####################################################################
 #-----------------------------------------------------------------------------#
-alias chrome='(chromium-browser --incognito &); exit'
+alias chrome='(chromium --incognito &); exit'
 alias fire='(firefox --private &); exit'
 alias make='make --warn-undefined-variables'
 alias mypy="mypy --config-file $HOME/.mypy"

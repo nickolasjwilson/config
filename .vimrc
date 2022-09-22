@@ -94,3 +94,7 @@ set ruler
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Display the line number on the left side.
 set number
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Alter the completion of file-system paths.
+set wildmode=longest,list
